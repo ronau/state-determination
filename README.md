@@ -9,7 +9,7 @@ Usage
 
 **state_determination.py**
 
-Instantiate the `state_determination` class by specifying the pickle-serialized file with the polygon data for the states. See state_borders_generator.py for details on the format of this data structure.
+Instantiate the `state_determination` class by specifying the pickle-serialized file with the polygon data for the states. See [state_borders_generator.py](state_borders_generator.py) for details on the format of this data structure.
 
 Most interesting method is `state_of_geoposition(lat, long)` which returns a string with the abbreviation (e.g. PA) of the state where the
 geoposition is located in.
@@ -39,13 +39,13 @@ Two methods are commonly used:
 
 According to various literature, the winding number (wn) is more precise, especially in case a polygon overlaps with itself.
 
-A relatively simple algorithm for calculation of the winding number is shown at http://geomalgorithms.com/a03-_inclusion.html (or theory/Inclusion-point-in-polygon-pdf) and will be used here.
+A relatively simple algorithm for calculation of the winding number is shown at http://geomalgorithms.com/a03-_inclusion.html (or [theory/Inclusion-point-in-polygon.pdf](theory/Inclusion-point-in-polygon.pdf)) and will be used here.
 
 Other descriptions and explanations regarding crossing number and winding number can be found here (German only):
 
-- Kreuzungszahl: http://www-lehre.informatik.uni-osnabrueck.de/~cg/2002/skript/node43.html (theory/Kreuzungszahl.pdf)
-- Umlaufszahl: http://www-lehre.informatik.uni-osnabrueck.de/~cg/2002/skript/node44.html (theory/Umlaufszahl.pdf)
-- Punkt im Polygon: http://rw7.de/ralf/inffaq/polygon.html (theory/Punkt-im-Polygon.pdf)
+- Kreuzungszahl: http://www-lehre.informatik.uni-osnabrueck.de/~cg/2002/skript/node43.html [theory/Kreuzungszahl.pdf](theory/Kreuzungszahl.pdf)
+- Umlaufszahl: http://www-lehre.informatik.uni-osnabrueck.de/~cg/2002/skript/node44.html [theory/Umlaufszahl.pdf](theory/Umlaufszahl.pdf)
+- Punkt im Polygon: http://rw7.de/ralf/inffaq/polygon.html [theory/Punkt-im-Polygon.pdf](theory/Punkt-im-Polygon.pdf)
 
 
 Data Types/Structures
